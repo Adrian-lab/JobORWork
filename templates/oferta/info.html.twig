@@ -1,0 +1,13 @@
+{% extends 'menu.html.twig' %}
+
+{% block title %}Hello OfertaController!{% endblock %}
+
+{% block body %}
+    <ul>
+        
+        <li>{{ datosOferta.titol|e }}</li>
+        <li>{{ datosOferta.descripcio|e }}</li>
+        <li><a href="/{{datosOferta.id}}/{{datosEmpresa.nom}}">{{ datosEmpresa.nom|e }}</a></li>
+        
+    </ul>
+{% endblock %}

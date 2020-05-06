@@ -1,0 +1,11 @@
+{% extends 'menu.html.twig' %}
+
+{% block title %}Hello OfertaController!{% endblock %}
+
+{% block body %}
+    <ul>
+        {% for empresa in empresas %}
+            <li>{{ empresa.nom|e }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
