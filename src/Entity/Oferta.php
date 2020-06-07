@@ -24,7 +24,7 @@ class Oferta
     private $descripcio;
 
     /**
-     * @ORM\Column(type="date", nullable=true)
+     * @ORM\Column(type="string", nullable=true)
      */
     private $dataPub;
 
@@ -70,12 +70,12 @@ class Oferta
         return $this;
     }
 
-    public function getDataPub(): ?\DateTimeInterface
+    public function getDataPub(): ?string
     {
         return $this->dataPub;
     }
 
-    public function setDataPub(?\DateTimeInterface $dataPub): self
+    public function setDataPub(?string $dataPub): self
     {
         $this->dataPub = $dataPub;
 

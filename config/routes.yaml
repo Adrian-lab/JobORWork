@@ -1,11 +1,17 @@
-index:
-    path: /
-    controller: App\Controller\OfertaController::index
-    defaults:
-      template: 'index.html.twig'
-
-empresas:
-    path: /empresas
-    controller: App\Controller\EmpresasController::empresas
-    defaults:
-      template: 'empresas.html.twig'
+#index:
+#    path: /
+#    controller: App\Controller\OfertaController::index
+#    defaults:
+#     template: 'index.html.twig'
+#
+#empresas:
+#    path: /empresas
+#    controller: App\Controller\EmpresasController::empresas
+#    defaults:
+#      template: 'empresas.html.twig'
+#
+#admin:
+#    path: /admin
+#    controller: App\Admin\AdminOfertaController\Controller::admin
+#    defaults:
+#      template: 'admin/adminOferta.html.twig'

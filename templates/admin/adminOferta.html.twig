@@ -1,0 +1,30 @@
+{% extends 'menu.html.twig' %}
+
+{% block title %}Panell d'administracio{% endblock %}
+
+{% block body %}
+    <ul style="margin-top:50px;">
+        {% for oferta in ofertas %}
+
+            <table style="width:100%">
+                <tr id="myTable">
+                    <th>ID</th>
+                    <th>Titol</th>
+                    <th>Descripció</th>
+                    <th>Data</th>
+                </tr>
+                <tr>
+                    <th>{{ oferta.id|e }}</th>
+                    <th>{{ oferta.titol|e }}</th>
+                    <th>{{ oferta.descripcio|e }}</th>
+                    <th>{{ oferta.dataPub|e }}</th>
+                    <th> <a class = "btn btn-secondary" href="{{path("admin_oferta_modif", {'id' :oferta.id})}}">Modificar</a></th>
+                    <th> <a class = "btn btn-secondary" href="{{path("admin_oferta_anyadir" )}}">Añadir</a></th>
+                    <th> <a class = "btn btn-secondary" href="{{path("admin_oferta_borrar" )}}">Borrar</a></th>
+                </tr>
+    
+            </table>
+        {% endfor %}
+        
+        
+        {% endblock %}
